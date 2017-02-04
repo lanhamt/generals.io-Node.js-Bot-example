@@ -16,8 +16,8 @@ socket.on('connect', function() {
 	 * replacing this line with something that instead supplies the user_id via an environment variable, e.g.
 	 * var user_id = process.env.BOT_USER_ID;
 	 */
-	var user_id = 'my_example_bot_id';
-	var username = 'Example Bot';
+	var user_id = process.env.BOT_USER_ID;
+	var username = 'Destructo' ;
 
 	// Set the username for the bot.
 	socket.emit('set_username', user_id, username);
